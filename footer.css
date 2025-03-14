@@ -1,0 +1,164 @@
+/* Footer Styles */
+footer {
+    background: linear-gradient(to left, #000000 35%, #3a32e0, #a3179a, #a3179a, #580c53);
+    color: aliceblue;
+    padding: 40px 0;
+    color: white;
+    margin-top: 177px;
+}
+
+/* Footer Container */
+.contain {
+    /* background-color: rgb(0, 0, 0); */
+    max-width: 1200px;
+    width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px 40px; /* Controls spacing between rows and columns */
+    margin: 0px auto;
+    /* border: 2px solid red; Visible grid border */
+    place-items: center; /* Centers all grid items by default */
+}
+
+/* Show Grid Borders */
+.contain div {
+    /* outline: 2px dashed white; Visible borders around each grid item */
+    padding: 0px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    /* text-align: center; Default center text */
+}
+
+/* Align first column (c1) to the left */
+.c1 {
+    /* padding-top: 100px; */
+    justify-self: start; /* Moves to the left */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Ensure all other columns are centered */
+.c2, .c3 {
+    /* padding-top: 0px; */
+    justify-self: center; /* Centers content */
+    text-align: center; /* Centers text */
+}
+
+/* Main Heading */
+.c1 h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Section Titles */
+.c2 h3, .c3 h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* List Styling */
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Links */
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: lightgray;
+}
+
+.footer-social {
+    margin-top: 10px;
+    padding-left: 0px;
+    text-align: left;
+    color: white;
+    padding-bottom: 0px;
+    margin-left: 0px;
+}
+
+.footer-social a {
+    place-items: left;
+    color: white;
+    font-size: 20px;
+    margin: 0px 0px;
+    transition: 0.3s;
+    margin-right: 10px;
+    /* filter: invert(1); */
+}
+
+.footer-social a:hover {
+    transform: scale(1.3); /* Enlarges the icon */
+    filter: drop-shadow(2px 2px 5px rgba(169, 0, 0, 0.9)); /* Glow effect */
+    color: white;
+}
+
+
+.com{
+    /* border: 2px solid white; */
+    width: 500px;
+    height: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    /* margin-left: 150px; */
+
+}
+
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .contain {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .c1 h1 {
+        font-size: 24px;
+    }
+
+    .c2 h3, .c3 h3 {
+        font-size: 18px;
+    }
+
+    .c1 p {
+        font-size: 13px;
+    }
+}
+
+
+.low{
+    /* border: 2px solid olive; */
+    border-left: 11px solid rgb(36, 56, 183);
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.low h4{
+    margin-left: 20px;
+}
+.low div ul{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    /* margin-right: 20px; */
+}
+.low div ul li{
+    margin-right: 40px;
+}

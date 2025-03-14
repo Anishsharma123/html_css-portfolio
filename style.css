@@ -1,0 +1,205 @@
+/* Reset styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #000000 40%, #3a32e0, #a3179a, #a3179a, #000000);
+    color: aliceblue;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color:transparent;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+
+}
+
+/* Navbar links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Full screen height */
+    color: white;
+    
+    /* border: 2px solid red; */
+    /* gap: 180px; */
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* border: 2px solid green; */
+    width: 550px;
+    height: 500px;
+    /* justify-content: flex-end; */
+    gap: 30px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+.right{
+    border: 2px solid green;
+    width: 600px;
+    height: 500px;
+}
+
+/* body {
+    background-color: #1a0849;
+    color: white; 
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    padding: 50px;
+} */
+
+.left h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.left .highlight {
+    color: #e600ff; /* Bright pink/purple */
+    text-shadow: 0px 0px 10px rgba(230, 0, 255, 0.7);
+}
+
+.leftt .blue {
+    color: #007bff; /* Blue Color */
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Buy Now Button */
+.buy {
+    background: linear-gradient(to right, #ff00ff, #5500ff);
+    color: white;
+    border: 2px solid transparent;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Play Now Button (Transparent Background with Border) */
+.play {
+    background: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #ff00ff, #5500ff);
+    border-image-slice: 1;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.buy:hover {
+    background: linear-gradient(to right, #5500ff, #ff00ff);
+}
+
+.play:hover {
+    background: linear-gradient(to right, #5500ff, #ff00ff);
+    color: white;
+}
+
+img {
+    width: 800px;
+    height: auto;
+    margin-right: -100px;
+    padding-left: 20px;
+    /* position: absolute; */
+    /* margin-right: 2px; */
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 939px) {
+    .hamburger {
+        display: block;
+        
+    }
+    .logo{
+        margin-left: 40px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px;
+        border-bottom: 1px solid white;
+    }
+}

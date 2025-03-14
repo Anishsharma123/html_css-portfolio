@@ -1,0 +1,31 @@
+.sln{
+    height: 30vh;
+    /* background: linear-gradient(to right, #000000 40%, #3a32e0, #a3179a, #a3179a, #000000);
+    color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.slanted-nav {
+
+    /* background-color: #a52a2a; */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    transform: skewY(-7deg); /* Start as slanted */
+}
+
+.slanted-nav.straight {
+    transform: skewY(0deg); /* Straighten */
+}
+
+.slanted-nav.slanted {
+    transform: skewY(-7deg); /* Slant again */
+}
